@@ -7,6 +7,14 @@
  */
 
 html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -428,4 +436,80 @@ th {
 
 
 
+/* START  */
+html {
+  webkit-font-smoothing: antialiased;
 
+}
+
+body {
+  background-color: lightgray;
+
+}
+
+div { 
+  border: 2px solid chocolate;
+  border-radius: 10px 3px 10px;
+}
+
+
+nav {
+  
+  display: block;
+  height: 70px;
+
+
+}
+
+.top-nav {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  font-family: "Roboto" sans-serif;
+  font-size:  16px;
+  color: #838994; 
+  letter-spacing: 0.03em;
+  -
+}
+
+
+.top-nav > .content {
+  width : 900px;
+  height :70px;
+  margin: 0 auto;
+
+}
+
+.content {
+  padding: 0 15px;
+  box-sizing: border-box
+
+}
+
+.content > .links {
+  float: right;
+
+
+}
+
+.links {
+  margin-top: 1.51em;
+}
+
+.links > li {
+  transition: color 1s ease;
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.top-nav  .links > .active {
+  color: #4c5058;
+  font-weight: 500;
+}
+
+
+.links > li:hover {
+   
+   color: #333333;
+}
