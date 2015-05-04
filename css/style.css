@@ -438,7 +438,7 @@ th {
 
 /* START  */
 html {
-  webkit-font-smoothing: antialiased;
+  webkit-font-smoothing:  antialiased;
 
 }
 
@@ -448,13 +448,13 @@ body {
 }
 
 div { 
-  border: 2px solid white;
-  border-radius: 10px 3px 10px;
+  border: 1px solid white;
+  border-radius: 1px 1px 1px;
 }
 
-
+/* navigation bar*/
 nav {
-  
+  z-index: 1;
   display: block;
   height: 70px;
 
@@ -477,14 +477,11 @@ nav {
   width : 900px;
   height :70px;
   margin: 0 auto;
-
-}
-
-.top-nav > .content {
   padding: 0 15px;
   box-sizing: border-box
 
 }
+
 
 .content > .links {
   float: right;
@@ -497,7 +494,7 @@ nav {
 }
 
 .links > li {
-  transition: color 1s ease;
+  transition: color 0.5s ease;
   cursor: pointer;
   display: inline-block;
   margin-left: 2em;
@@ -514,13 +511,14 @@ nav {
    color: #333333;
 }
 
+/*2nd part - section*/
 
 section > .content {
   height: 45.938rem;
   background-image: url("first-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center;
   text-align: center;
 
 }
@@ -529,7 +527,7 @@ section > .content > * {
   font-family: "Roboto" sans-serif;
   font-size:  16px;
   color: white; 
-  letter-spacing: 0.1em;
+  letter-spacing: 0.01em;
   font-weight: 300;
   
 
@@ -549,6 +547,9 @@ section > .content > h3 {
 }
 
 .content  > button {
+  -webkit-transition: background-color 1s ease-in-out;
+  -o-transition: background-color 1s ease-in-out;
+  transition: background-color 1s ease-in-out;
   margin-top: 1.563rem;
   padding: 16px 29px;
   background-color: #f15a29;
@@ -558,14 +559,16 @@ section > .content > h3 {
 }
 
 .content > button:hover {
-    background-color: #ff0000;
+    background-color: #ff2d22;
 }
+
+/*last section - including the footer*/
 
 .last-sec  {
   background-color: white; 
   width: 100%;
   text-align: center;
-  margin: 0 auto;
+
 }
 
 .container > ul  > li {
@@ -586,25 +589,68 @@ section > .content > h3 {
 
 .container > ul > li {
   margin: 2em 2em;
+  border: 1px;
+
 }
+
 
 .container > ul > li > p {
   font-size: 1.5em;
 }
+
+
 
 footer {
   background-color: white;
 
 }
 
+h5 {
+  font-family: "Roboto" sans-serif;
+  font-weight: 500;
+  font-size: 100%;
+}
+
+.case > ul {
+   list-style-position: inside;
+}
 .case > ul > li {
+ 
   display: inline-block;
   padding: 2em 2em;
+
+
+}
+
+.case > ul > li > i{
+  height: 2em;
+  width: 2em;
+  padding: .5em;
+  border-radius: 100px 100px 100px;
+  border: .06725em solid lightgray;
+
+}
+
+i#twitter {
+  color: #55acee;
+}
+
+i#facebook {
+  color: #4c66a4;
+}
+
+
+i#instagram {
+  color: #3f729b;
 }
 
 
 .case > ul {
   padding-left: 0
+}
+
+.case > ul > li {
+  padding: .5em;
 }
 
 .case {
@@ -613,3 +659,4 @@ footer {
   padding: 3em 0;
   margin: 0 auto;
 }
+
