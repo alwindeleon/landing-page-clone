@@ -448,7 +448,7 @@ body {
 }
 
 div { 
-  border: 2px solid chocolate;
+  border: 2px solid white;
   border-radius: 10px 3px 10px;
 }
 
@@ -469,7 +469,7 @@ nav {
   font-size:  16px;
   color: #838994; 
   letter-spacing: 0.03em;
-  -
+  
 }
 
 
@@ -480,7 +480,7 @@ nav {
 
 }
 
-.content {
+.top-nav > .content {
   padding: 0 15px;
   box-sizing: border-box
 
@@ -512,4 +512,104 @@ nav {
 .links > li:hover {
    
    color: #333333;
+}
+
+
+section > .content {
+  height: 45.938rem;
+  background-image: url("first-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  text-align: center;
+
+}
+
+section > .content > * {
+  font-family: "Roboto" sans-serif;
+  font-size:  16px;
+  color: white; 
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  
+
+}
+
+section > .content > h1 {
+  font-size: 3.125rem;
+  margin-top: 17.5rem;
+  
+
+
+}
+section > .content > h3 {
+  margin-top: 1.25rem;
+  font-size: 1.563rem
+
+}
+
+.content  > button {
+  margin-top: 1.563rem;
+  padding: 16px 29px;
+  background-color: #f15a29;
+  border: .5px .5px;
+  border-radius: 5px 5px 5px;
+  border-color: #f15a29;
+}
+
+.content > button:hover {
+    background-color: #ff0000;
+}
+
+.last-sec  {
+  background-color: white; 
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.container > ul  > li {
+  display: inline-block;  
+}
+
+.container > h1 {
+  margin-top: 0;
+  font-family: "Roboto" sans-serif;
+  font-weight: 300;
+  color:  #1d1e21;
+  font-size: 3em;
+}
+
+.last-sec > .container {
+  padding: 5em 0;
+}
+
+.container > ul > li {
+  margin: 2em 2em;
+}
+
+.container > ul > li > p {
+  font-size: 1.5em;
+}
+
+footer {
+  background-color: white;
+
+}
+
+.case > ul > li {
+  display: inline-block;
+  padding: 2em 2em;
+}
+
+
+.case > ul {
+  padding-left: 0
+}
+
+.case {
+  text-align: center;
+  width: 960px;
+  padding: 3em 0;
+  margin: 0 auto;
 }
